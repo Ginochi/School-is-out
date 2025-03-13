@@ -4,9 +4,9 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
     [SerializeField] private int searchingRadius;
+    [SerializeField] private GameObject target;
 
     private NavMeshAgent _myNavMeshAgent;
-    private Vector3 _playerLocation;
     private Vector3 _idleLocation;
     
     void Start()
@@ -17,15 +17,14 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
-        _playerLocation = GetPlayerLocation();
         LookForPlayer();
     }
 
     void LookForPlayer()
     {
-        if (Vector3.Distance(transform.position, _playerLocation) < searchingRadius)
+        if (Vector3.Distance(transform.position, target.transform.position) < searchingRadius)
         {
-            SetDestinationTo(_playerLocation);
+            SetDestinationTo(target.transform.position);
         }
         else
         {
@@ -36,10 +35,5 @@ public class EnemyController : MonoBehaviour
     void SetDestinationTo(Vector3 playerLocation)
     {
         _myNavMeshAgent.SetDestination(playerLocation);
-    }
-    
-    Vector3 GetPlayerLocation()
-    {
-        return GameObject.FindWithTag("Player").transform.position;
     }
 }
