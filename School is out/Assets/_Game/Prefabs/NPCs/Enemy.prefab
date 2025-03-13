@@ -27,11 +27,12 @@ Transform:
   m_GameObject: {fileID: 1258496637567112278}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 44.396088, y: 35.469433, z: 46.909172}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3009517524127210780}
+  - {fileID: 7208875504891539116}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7254519911913887499
@@ -47,7 +48,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchingRadius: 10
-  target: {fileID: 0}
 --- !u!195 &3999581201077565068
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -99,11 +99,10 @@ Transform:
   m_GameObject: {fileID: 7599216524130295104}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -34.5, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7208875504891539116}
+  m_Children: []
   m_Father: {fileID: 2998393464658575860}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &9034522034629736861
@@ -209,15 +208,13 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 80
   m_CollisionDetection: 0
-<<<<<<< Updated upstream
-=======
 --- !u!1001 &5002591926994479575
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 3009517524127210780}
+    m_TransformParent: {fileID: 2998393464658575860}
     m_Modifications:
     - target: {fileID: 2407126488285251451, guid: be1f3f5439048d544a63475011297581, type: 3}
       propertyPath: m_LocalScale.x
@@ -237,7 +234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2407126488285251451, guid: be1f3f5439048d544a63475011297581, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.929
+      value: 1.929
       objectReference: {fileID: 0}
     - target: {fileID: 2407126488285251451, guid: be1f3f5439048d544a63475011297581, type: 3}
       propertyPath: m_LocalPosition.z
@@ -289,4 +286,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2407126488285251451, guid: be1f3f5439048d544a63475011297581, type: 3}
   m_PrefabInstance: {fileID: 5002591926994479575}
   m_PrefabAsset: {fileID: 0}
->>>>>>> Stashed changes
